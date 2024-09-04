@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header ssection*/
+header{
+    background-color: black;
+
+}
+.nav-containr{
+color: azure;
+font-size: 50px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nav-list :first-child{
+    flex-grow: 1;
+
+}
+
+/*End header section*/
+
+/* main section*/
+/* End main section*/
+
+/*footer section*/
+
+/* End footer section*/
+

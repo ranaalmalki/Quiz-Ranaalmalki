@@ -11,17 +11,19 @@ header{
 }
 .nav-containr{
 color: azure;
-font-size: 50px;
+font-size: 30px;
 }
 .nav-list{
     list-style: none;
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 2em;
 }
 
 .nav-list :first-child{
     flex-grow: 1;
+    height: 3em;
+    width: 4em;
 
 }
 
@@ -29,10 +31,58 @@ font-size: 50px;
 
 /* main section*/
 
+.main-containr{
+background-color:white;
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: 500px;
+text-align: center;
+line-height: 4em;
+
+}
+.main-content{
+}
+.main-content a{
+    text-decoration: none;
+    color: azure;
+    background-color: purple ;
+    padding: 1em 3em 1em 3em;
+
+}
+.list-images{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 1em 1em 1em;
+background-color: rgb(252, 250, 236);
+}
+ .image-1{
+    grid-column: 1/4;
+    grid-row: 2/5;
+height: 10%;
+ }
+ .image-2{
+    grid-row: 3;
+    grid-column: 3/3;
+
+ }
+ .image-3{
+    grid-column: 4;
+    grid-row: 3/5;
+
+ }
+ .image-4{
+    grid-row: 1;
+    background-color: rgb(241, 231, 195);
+
+ }
+
 /* End main section*/
 
 /*footer section*/
 .footer-container{
+    
     background-color: black;
     color: azure;
 display: grid;
@@ -44,4 +94,27 @@ justify-items: center;
 .footer-container div{
 }
 /* End footer section*/
+
+@media only screen and (max-width: 600px){
+    .nav-containr{
+        color: azure;
+        font-size: 30px;
+        }
+        .nav-list{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2em;
+        }
+        .main-containr{
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            line-height: 4em;
+            }
+
+}
+    
+
 

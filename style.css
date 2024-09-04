@@ -28,9 +28,20 @@ font-size: 50px;
 /*End header section*/
 
 /* main section*/
+
 /* End main section*/
 
 /*footer section*/
+.footer-container{
+    background-color: black;
+    color: azure;
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: 1fr 1fr ;
+justify-items: center;
+}
 
+.footer-container div{
+}
 /* End footer section*/
 
